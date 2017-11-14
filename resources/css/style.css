@@ -1,121 +1,93 @@
+/*BASE STYLES*/
 html {
   font-size: 18px;
   line-height: 1.4rem;
-  font-family: helvetica;
+  font-family: Helvetica;
+  box-sizing: border-box;
 }
-/*Header*/
 
-.banner {
+
+
+/*Header*/
+.header {
   background-image: url("../images/glasses-bg.png");
   background-size: cover;
+  background-position: center;
   height: 30rem;
 }
-.header-1 {
-  max-width: 960px;
-  margin: 0 auto;
-}
-.Navigation {
+.top-header {
+  width: 960px;
+  margin: auto;
   display: flex;
-  background-color: cadetblue;
-  font-size: 1rem;
-  color: white;
-  top: 1rem;
   position: relative;
+  top: 1rem;
+  justify-content: space-between;
+  background-color: cadetblue;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
-.Navigation img {
-  height: 1.5rem;
-  margin: auto 1rem auto 2rem;
-}
-.sitename {
-  margin: auto auto auto 0;
-}
-.nav {
-  margin-right: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-.banner-text {
+.top-header-content {
   display: flex;
-  font-size: 2rem;
-  font-weight: bold;
-  line-height: 1.2;
-  justify-content: flex-end;
+  align-items: center;
 }
-.banner-text h1 {
-  width: 50%;
+.top-header-content img{
+  padding-left: 2rem;
+  padding-right: 1rem;
+  height: 1.5rem;
+}
+.top-header-content span {
+padding-left: 2rem;
+padding-right: 2rem;
+}
+.banner-header {
+  width: 960px;
+  margin: auto;
+  display: flex;
   position: relative;
   top: 10rem;
-  left: 5rem;
+  left: 3rem;
+  justify-content: flex-end;
+}
+.banner-header-content {
+  width: 50%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
   background-color: white;
   padding: 1.5rem 5rem;
 }
 
 /*Main*/
-.top-page {
-  display: flex;
+.top-main {
   width: 960px;
   margin: auto;
+  margin-top: 3rem;
+  border: 3px solid blue;
+  display: flex;
   justify-content: center;
 }
-.top-item {
+.top-main-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  border: 3px solid red;
   height: 8rem;
-  margin: 3rem 6rem;
+  justify-content: space-between;
+  margin-left: 6rem;
 }
-.item {
-  flex-shrink: 1;
-  text-align: center;
+
+.ruler,
+.truck {
+  width: 5rem;
+  height: auto;
 }
 .paper {
-  width: 3.5rem ;
-}
-.ruler {
-  width: 5rem;
-}
-.delivery {
-  width: 5rem;
+  width: 3.5rem;
+  height: auto;
 }
 
-.bottom-page {
-  width: 960px;
-  margin: auto;
-  margin-bottom: 5rem;
-  display: flex;
-  justify-content: center;
-}
-.bottom-content {
-  display: flex;
-  flex-direction: column;
-  width: 35%;
-  margin-left: 2.5%;
-  margin-right: 2.5%
-}
-
-.bottom-header {
-  font-weight: bold;
-  color: white;
-  background-color: cadetblue;
-  width: 10rem;
-  padding: 0.5rem 0 0.5rem 1.25rem;
-  margin-bottom: 1rem;
-}
-
-/*footer*/
-.footer-background {
-  background-color: azure;
-  height: 9rem;
-}
-.footer-content {
-  width: 960px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-}
-.footer-logo {
-  height: 1rem;
-  padding-left: 4rem;
-  padding-right: 1rem;
+.top-main-content div,
+.top-main-content span {
+  border: 3px solid yellow;
 }
