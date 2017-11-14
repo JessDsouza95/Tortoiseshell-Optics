@@ -1,11 +1,18 @@
 /*BASE STYLES*/
 html {
   font-size: 18px;
-  line-height: 1.4rem;
+  line-height: 1.4;
   font-family: Helvetica;
   box-sizing: border-box;
 }
-
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+main {
+  flex: 1;
+}
 
 
 /*Header*/
@@ -61,33 +68,72 @@ padding-right: 2rem;
 
 /*Main*/
 .top-main {
+  display: flex;
   width: 960px;
   margin: auto;
-  margin-top: 3rem;
-  border: 3px solid blue;
-  display: flex;
   justify-content: center;
+  margin-top: 3rem;
 }
 .top-main-content {
   display: flex;
   flex-direction: column;
-  border: 3px solid red;
-  height: 8rem;
   justify-content: space-between;
-  margin-left: 6rem;
+  height: 8rem;
+  align-items: center;
+  width: 10%;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
-
 .ruler,
 .truck {
   width: 5rem;
-  height: auto;
 }
 .paper {
   width: 3.5rem;
-  height: auto;
+}
+.top-main-content span{
+  text-align: center;
 }
 
-.top-main-content div,
-.top-main-content span {
-  border: 3px solid yellow;
+.bottom-main {
+  width: 960px;
+  margin: auto;
+  display: flex;
+  margin-top: 3rem;
+  height: auto;
+  justify-content: center;
+}
+.bottom-main-content {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-left: 5%;
+  margin-bottom: 5rem;
+}
+
+.bottom-main-content span{
+  width: 10rem;
+  background-color: cadetblue;
+  padding: 0.5rem 0rem 0.5rem 1.25rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/*Footer*/
+.footer {
+  width: 960px;
+  margin: auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+}
+.footer-content img {
+  height: 1.5rem;
+  padding-left: 4rem;
+  padding-right: 1rem;
 }
