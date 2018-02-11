@@ -1,55 +1,63 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Tortoiseshell Optics</title>
+        <title>Tortoiseshell sOptics</title>
         <link href="./resources/css/reset.css" rel="stylesheet" type="text/css"/>
-        <link href="./resources/css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="./resources/css/mobile.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body class="container">
+    <body class="container" >
+
         <header>
             <div class="header">
                 <div class="header-content layout">
                     <div class="top-header-content container"/>
-                        <img src="./resources/images/logo-white.png" alt="website logo"/>
-                        <h1>Tortoiseshell Optics</h1>
-                        <nav class="container desktop">
+                        <a href="./index.html"><img src="./resources/images/logo-white.png" alt="website logo"/></a>
+                        <h1 id="desktop">Tortoiseshell Optics</h1>
+                        <nav id ="desktop" class="container">
                             <span>Services</span>
-                            <span>Products</span>
-                            <span>Contact</span>
+                            <span><a href="./javascript.html">Products</a></span>
+                            <span><a href="./page.html">Contact</a></span>
                         </nav>
-                        <nav class="container mobile">
+                        <nav id="mobile">
                             <span>Menu</span>
                         </nav>
                     </div>
-                    <div class="banner-header-content container">
+                    <div class="banner-header-content">
                         <h2>DON'T JUST LOOK, SEE.</h2>
                     </div>
                 </div>
             </div>
         </header>
+
         <main>
             <div class="main-top layout container">
-                <div class="container paper">
-                    <img src="./resources/images/paper-icon.png" alt="paper image"/>
-                    <span>Comprehensive Exams</span>
+                <div class="wrapper">
+                    <div class="container paper item">
+                        <img src="./resources/images/paper-icon.png" alt="paper image"/>
+                        <span>Comprehensive Exams</span>
+                    </div>
                 </div>
-                <div class="container ruler">
-                    <img src="./resources/images/ruler-icon.png" alt="ruler image"/>
-                    <span>Custom Fittings</span>
+                <div class="wrapper">
+                    <div class="container ruler item">
+                        <img src="./resources/images/ruler-icon.png" alt="ruler image"/>
+                        <span>Custom Fittings</span>
+                    </div>
                 </div>
-                <div class="container truck">
-                    <img src="./resources/images/truck-icon.png" alt="truck image"/>
-                    <span>Fast Delivery</span>
+                <div class="wrapper">
+                    <div class="container truck item">
+                        <img src="./resources/images/truck-icon.png" alt="truck image"/>
+                        <span>Fast Delivery</span>
+                    </div>
                 </div>
             </div>
             <div class="main-bottom layout container">
-                <div class="container">
+                <div class="container item2">
                     <h1>PHILOSOPHY</h1>
                     <p>Over 75% of our brains are dedicated to one sense: vision. We believe everyone
                       deserves to see the world, not matter what. That's why we offer eye exams, customer
                       fittings, and quick delivery at a low cost. It's your vision that makes ours.</p>
                 </div>
-                <div class="container">
+                <div class="container item2">
                     <h1>APPOINTMENTS</h1>
                     <p>Schedule an appointment by calling us at (312) 654-0987. We're open Tuesday - Saturday,
                       9AM - 6PM.</p>
@@ -59,7 +67,7 @@
         <footer>
             <div class="footer layout container">
                 <img src="./resources/images/logo-black.png" alt="footer logo"/>
-                <span>Copyright Tortoiseshell Optics</span>
+                <span id="desktop">Copyright Tortoiseshell Optics</span>
             </div>
         </footer>
     </body>
